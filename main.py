@@ -33,7 +33,9 @@ for mensagem in st.session_state["lista_mensagens"]:
     content = mensagem["content"]
     st.chat_message(role).write(content)
 
+
 mensagem_usuario = st.chat_input("Escreva sua mensagem aqui")
+
 
 if mensagem_usuario:
     # user -> ser humano
