@@ -16,9 +16,12 @@ from openai import OpenAI
 with st.spinner(text='Carregando...'):
    time.sleep(1)
    # st.success('Pronto.')
+
 key = st.secrets["OPEN_IA_KEY"]
+
 modelo = OpenAI(api_key=key)
-st.write("### KALDIRIS - ChatBot") # markdown
+
+st.write("### KALDIRIS - ChatBot Versão 3.0") # markdown
 
 # session_state = memoria do streamlit
 if not "lista_mensagens" in st.session_state:
