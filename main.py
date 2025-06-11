@@ -45,7 +45,7 @@ if mensagem_usuario:
     # resposta da IA
     resposta_modelo = modelo.chat.completions.create(
         messages=st.session_state["lista_mensagens"],
-        model="gpt-4o"
+        model="gpt-3.5-turbo"
     )
     
     resposta_ia = resposta_modelo.choices[0].message.content
